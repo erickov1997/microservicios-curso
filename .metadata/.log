@@ -1,0 +1,143 @@
+!SESSION 2023-07-31 23:00:47.463 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=es_419
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/erickortiz/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/erickortiz/.eclipse_keyring
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-07-31 23:00:47.974
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-07-31 23:01:02.635
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-31 23:01:02.635
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:05.626
+!MESSAGE Classpath changed for project: carro-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:09.187
+!MESSAGE Classpath changed for project: carro-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:09.188
+!MESSAGE Boot project ADDED: carro-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:09.188
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:09.201
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-31 23:02:09.208
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_17.0.7.v20230425-1502/jre/bin/java
+-cp
+/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.springframework.tooling.boot.ls_1.47.0.202306150731/servers/spring-boot-language-server/BOOT-INF/classes:/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.springframework.tooling.boot.ls_1.47.0.202306150731/servers/spring-boot-language-server/BOOT-INF/lib/*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.springframework.tooling.boot.ls_1.47.0.202306150731/servers/spring-boot-language-server/BOOT-INF/classes/application.properties
+-XX:ErrorFile=/Users/erickortiz/Documents/SpringBoot/microservicios/cursoTecnologiaAvanza/microservicios-curso/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1690866129208
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:09.208
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-31 23:02:09.211
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 54268
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-07-31 23:02:09.223
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:09.407
+!MESSAGE Classpath changed for project: carro-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:09.467
+!MESSAGE Classpath changed for project: carro-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:09.736
+!MESSAGE Classpath changed for project: carro-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:40.187
+!MESSAGE Classpath changed for project: moto-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:40.211
+!MESSAGE Classpath changed for project: moto-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:40.211
+!MESSAGE Boot project ADDED: moto-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:40.276
+!MESSAGE Classpath changed for project: moto-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:02:40.592
+!MESSAGE Classpath changed for project: moto-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:03:08.408
+!MESSAGE Classpath changed for project: usuario-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:03:08.506
+!MESSAGE Classpath changed for project: usuario-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:03:08.506
+!MESSAGE Boot project ADDED: usuario-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:03:08.544
+!MESSAGE Classpath changed for project: usuario-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:03:08.887
+!MESSAGE Classpath changed for project: usuario-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:14:52.314
+!MESSAGE Classpath changed for project: config-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:14:52.314
+!MESSAGE Boot project ADDED: config-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:14:52.571
+!MESSAGE Classpath changed for project: config-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-31 23:14:57.579
+!MESSAGE Classpath changed for project: config-service
